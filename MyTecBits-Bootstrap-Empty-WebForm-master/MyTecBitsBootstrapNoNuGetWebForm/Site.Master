@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyTecBitsBootstrapNoNuGetWebForm.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <!-- Meta tags and CSS reference needed for bootstrap -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+    <link rel="stylesheet" href="/Content/Site.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+    
+    <title>VisaLawPro</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 70px;">
+    <form id="form1" runat="server">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">VisaLaw.Pro</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/Default.aspx">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services.aspx">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.aspx">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news.aspx">News</a></li>
+                    <li class="nav-item"><a class="nav-link loginButton" href="#login">Login</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown04">Visa Types <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                          <a class="dropdown-item" href="#H-2Avisas">H-2A</a>
+                          <a class="dropdown-item" href="#H-2Bvisas">H-2B</a>
+                          <a class="dropdown-item" href="#H-1bvisas">H-1B</a>
+                          <a class="dropdown-item" href="#TNvisas">TN</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pull-right">
+                    <ul class="nav navbar-nav">
+                        <li><button type="submit" class="btn navbar-btn btn-danger creatAcct" name="createAcct" id="createAcct"  value="Log Out">Create a client account &raquo;</button></li>
+                    </ul>     
+                </div>
+            </div>
+            <!--/.nav-collapse -->
+        </nav>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Farmer and Farmer PLLC</p>
+            </footer>
+        </div>
+    </form>
+
+    <!-- jQuery and Bootstrap JS files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

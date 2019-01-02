@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{0CB88DE8-0CF2-4E30-B0A2-694155EA7E34}|">
+  <MonoDevelop.Ide.ItemProperties.MyTecBitsBootstrapNoNuGetWebForm PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyTecBitsBootstrapNoNuGetWebForm/contact.aspx">
+    <Files>
+      <File FileName="MyTecBitsBootstrapNoNuGetWebForm/Content/Site.css" Line="67" Column="24" />
+      <File FileName="MyTecBitsBootstrapNoNuGetWebForm/Default.aspx" Line="107" Column="15" />
+      <File FileName="MyTecBitsBootstrapNoNuGetWebForm/Site.Master" Line="31" Column="80" />
+      <File FileName="MyTecBitsBootstrapNoNuGetWebForm/contact.aspx" Line="47" Column="15" />
+      <File FileName="MyTecBitsBootstrapNoNuGetWebForm/news.aspx" Line="105" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
